@@ -83,8 +83,23 @@ acs-*.bib
 # cprotect
 *.cpt
 
-# elsarticle (documentclass of Elsevier journals)
+# elsarticle (documentclass of Elsevier journals) — fetched by `make`
 *.spl
+elsarticle.zip
+elsarticle.cls
+elsarticle.ins
+elsarticle.dtx
+elsarticle-harv.bst
+elsarticle-num.bst
+elsarticle-num-names.bst
+elsarticle-template-harv.tex
+elsarticle-template-num-names.tex
+elsarticle-template-num.tex
+elsarticle.log
+changelog.txt
+manifest.txt
+doc/
+README
 
 # endnotes
 *.ent
