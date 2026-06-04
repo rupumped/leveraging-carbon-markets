@@ -21,6 +21,9 @@
 %% The amsmath package provides various useful equation environments.
 \usepackage{amsmath}
 \usepackage[hyphens]{url}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\usepackage{float}
 %% The amsthm package provides extended theorem environments
 %% \usepackage{amsthm}
 
@@ -98,7 +101,7 @@
 %% Abstract
 \begin{abstract}
 %% Text of abstract
-Abstract text.
+\input{sections/abstract}
 \end{abstract}
 
 %%Graphical abstract
@@ -132,7 +135,9 @@ Abstract text.
 %% main text
 %%
 
-\input{lit-review.tex}
+\input{sections/intro}
+\input{sections/lit-review}
+\input{sections/concept}
 
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections
@@ -143,7 +148,7 @@ Abstract text.
 Appendix text.
 
 \bibliographystyle{elsarticle-num} 
-\bibliography{main.bib}
+\bibliography{references.bib}
 
 \end{document}
 
