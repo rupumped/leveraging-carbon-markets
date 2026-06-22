@@ -27,6 +27,10 @@
 %% The amsthm package provides extended theorem environments
 %% \usepackage{amsthm}
 
+\usepackage{longtable}
+\usepackage{makecell}
+\usepackage{enumitem}
+
 %% The lineno packages adds line numbers. Start line numbering with
 %% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
 %% for the whole article with \linenumbers.
@@ -138,14 +142,16 @@
 \input{sections/intro}
 \input{sections/lit-review}
 \input{sections/concept}
+\input{sections/methods}
+\input{sections/results}
+\input{sections/conc}
 
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections
 \appendix
-\section{Example Appendix Section}
-\label{app1}
-
-Appendix text.
+\input{sections/app-interview-guides}
+\input{sections/app-info-sheet}
+\input{sections/app-consent-form}
 
 \bibliographystyle{elsarticle-num} 
 \bibliography{references.bib}
